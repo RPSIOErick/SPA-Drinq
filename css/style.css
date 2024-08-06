@@ -1,0 +1,234 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    background-image: linear-gradient(to right, #0b1ec5, #4B0082);
+    background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+    overflow-y: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav
+{
+    background-color: #f8f8f8;
+    padding: 1.5vw;
+    position: relative;
+    z-index: 8;
+    text-align: center;
+    box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    width: 100vw;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+
+#home-link
+{
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#pedidos-link
+{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+}
+
+#d-form-cad
+{
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 4vw;
+
+    position: relative;
+    z-index: 3;
+    float: right;
+
+    width: 25%;
+    height: 90vw;
+    padding-top: 12.5vw;
+}
+
+#titulo-form-cad, #form-cad
+{
+    position: relative;
+    right: 10%;
+
+    margin: 0 auto;
+    
+}
+
+#triangle-deco
+{
+    width: 20vw;
+    height: 90vw;
+    background-color: #f8f8f8;
+
+    position: absolute;
+    left: 55%;
+    
+    transform: rotate(15deg);
+
+    box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.404);
+    
+}
+
+#btn-count-minus, #btn-count-plus
+{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 50%;
+    width: 4vw;
+    border: none;
+    font-size: 1.5vw;
+    background-color: #8A5F4A;
+    color: white;
+}
+
+input, textarea
+{
+    width: 80%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+textarea
+{
+    max-width: 80%;
+    min-width: 80%;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+select {
+    width: 90%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:hover {
+    border-color: #8b5e3c;
+}
+
+select:focus {
+    border-color: #8b5e3c;
+}
+
+select option {
+    background-color: #fff;
+    color: #333;
+}
+
+select option:hover {
+    background-color: #8b5e3c;
+    color: #fff;
+}
+
+#imagem-bebida
+{
+    position: absolute;
+    padding: 4vw;
+
+    top: 20%;
+    left: 5%;
+
+}
+
+
+#bebida-img
+{
+    position: relative;
+    height: 35vw;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+#preco
+{
+    background-color: #ECA533;
+    width: fit-content;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border-radius: 5vw;
+    color: white;
+    font-weight: bold;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+#preco_bebida, #bebidas{
+    text-align: center;
+}
+
+#btn-cad
+{
+    width: 60%;
+    padding: 1vw;
+    margin: 1vw 0;
+    border-radius: 1vw;
+    border: none;
+    font-size: 1.5vw;
+    background-color: #8A5F4A;
+    color: white;
+}
