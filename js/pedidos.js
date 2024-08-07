@@ -22,7 +22,7 @@ export class Pedidos {
                         <div class="descricao">
                             <p> Frio, suave e menos ácido. <br> Perfeito para amantes de café refrescante. </p>
                         </div>
-                        <button class="btn_editar_pedido"> EDITAR PEDIDO </button>
+                        <button class="btn_editar_pedido" onclick="window.location.href='#editar';"> EDITAR PEDIDO </button>
                     </div>
 
                     <div class="info_pedido" id='milkshake'>
@@ -35,7 +35,7 @@ export class Pedidos {
                             <img src="./../img/milkshake.png" alt="Imagem do MILKSHAKE DE MORANGO">
                         </div>
                         <div class="descricao">
-                            <p> Frio, suave e menos ácido. <br> Perfeito para amantes de café refrescante. </p>
+                            <p> Cremoso, doce e cheio de sabor. <br> Ideal para um refresco imediato! </p>
                         </div>
                         <button class="btn_editar_pedido"> EDITAR PEDIDO </button>
                     </div>
@@ -50,7 +50,7 @@ export class Pedidos {
                             <img src="./../img/boba.png" alt="Imagem do CHÁ DE BOLHAS">
                         </div>
                         <div class="descricao">
-                            <p> Frio, suave e menos ácido. <br> Perfeito para amantes de café refrescante. </p>
+                            <p> Leve, efervescente e suave. <br> Traz seu frescor a cada gole. </p>
                         </div>
                         <button class="btn_editar_pedido"> EDITAR PEDIDO </button>
                     </div>
@@ -65,7 +65,7 @@ export class Pedidos {
                             <img src="./../img/smoothie.png" alt="Imagem do SMOOTHIE DE MIRTILO">
                         </div>
                         <div class="descricao">
-                            <p> Frio, suave e menos ácido. <br> Perfeito para amantes de café refrescante. </p>
+                            <p> Cremoso, fresco e saboroso. <br> Capaz de revitalizar e nutrir! </p>
                         </div>
                         <button class="btn_editar_pedido"> EDITAR PEDIDO </button>
                     </div>

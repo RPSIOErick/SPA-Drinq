@@ -74,6 +74,11 @@ nav a
     padding-top: 12.5vw;
 }
 
+#titulo-form-cad
+{
+    font-size: 2vw;
+}
+
 #titulo-form-cad, #form-cad
 {
     position: relative;
@@ -135,7 +140,7 @@ textarea
 select {
     width: 90%;
     padding: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.3vw;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #fff;
@@ -168,17 +173,20 @@ select option:hover {
 {
     position: absolute;
     padding: 4vw;
+    z-index: -1;
 
-    top: 20%;
-    left: 5%;
+    top: 15%;
+    width: 50%;
+
+    text-align: center;
 
 }
-
 
 #bebida-img
 {
     position: relative;
     height: 35vw;
+    z-index: 5;
 
     animation: float 3s ease-in-out infinite;
 }
@@ -211,10 +219,28 @@ select option:hover {
     top: 50%;
     left: 50%;
     margin: -50px 0 0 -50px;
+    z-index: 2;
 
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 
+}
+
+#nome-bebida
+{
+    font-size: 3.5vw;
+    position: relative;
+    color: transparent;
+    font-weight: bold;
+
+    margin-top: -2vw;
+
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: white;
 }
 
 #preco_bebida, #bebidas{

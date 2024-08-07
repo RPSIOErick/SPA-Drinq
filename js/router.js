@@ -1,5 +1,6 @@
 import { Home } from './home.js'
 import { Pedidos } from './pedidos.js'
+import { Editar } from './editar.js'
 
 export class Router {
 
@@ -7,6 +8,7 @@ export class Router {
         this.rotas = {
             '#home': new Home(),
             '#pedidos': new Pedidos(),
+            '#editar': new Editar()
         }
 
         window.addEventListener('load', this.navegar.bind(this))

@@ -33,9 +33,9 @@ export class Home {
 
                             <span style='display: flex;'>
 
-                                <input type='button' id='btn-count-minus' value='-'> <!-- Botão para diminuir a quantidade -->
-                                <input type="text" id="preco_bebida" name="preco_bebida" readonly> <!-- Exibe o preço total -->
-                                <input type='button' id='btn-count-plus' value='+'> <!-- Botão para aumentar a quantidade -->
+                                <input type='button' id='btn-count-minus' value='-'>
+                                <input type="text" id="preco_bebida" name="preco_bebida" readonly>
+                                <input type='button' id='btn-count-plus' value='+'>
 
                             </span>
 
@@ -55,9 +55,11 @@ export class Home {
 
             <div id='imagem-bebida'>
 
-                <div id='preco'> </div> <!-- Exibe o preço da bebida selecionada -->
+                <div id='preco'> </div>
 
                 <img id='bebida-img' src='./../img/decorative_cups.png' alt='Imagem da bebida' />
+
+                <p id='nome-bebida'> </p>
             </div>
         `;
     }
@@ -69,11 +71,13 @@ export class Home {
             const gradient = this.getGradient(bebida);
             const imgSrc = this.getImageSrc(bebida);
             const preco = this.getPreco(bebida);
+            const nomeBebida = this.getNomeBebida(bebida);
 
             document.body.style.backgroundImage = gradient; // Muda o gradiente do fundo
             document.getElementById('bebida-img').src = imgSrc; // Atualiza a imagem da bebida
             document.getElementById('preco').innerHTML = preco; // Atualiza o preço exibido
             document.getElementById('preco_bebida').value = preco; // Atualiza o preço no campo de texto
+            document.getElementById('nome-bebida').innerHTML = nomeBebida; // Atualiza o nome da bebida
 
             document.getElementById('preco').style.opacity = 1; // Garante que o preço esteja visível
             this.quantidade = 1;  // Reseta a quantidade quando uma nova bebida é selecionada
@@ -116,6 +120,21 @@ export class Home {
                 return './../img/smoothie.png';
             default: 
                 return './../img/decorative_cups.png';
+        }
+    }
+
+    getNomeBebida(bebida) {
+        switch(bebida) {
+            case 'cold_brew': 
+                return 'COLD BREW';
+            case 'milkshake_morango': 
+                return 'MILKSHAKE DE MORANGO';
+            case 'cha_bolhas': 
+                return 'CHÁ DE BOLHAS';
+            case 'smoothie_mirtilo': 
+                return 'SMOOTHIE DE MIRTILO';
+            default: 
+                return '';
         }
     }
 

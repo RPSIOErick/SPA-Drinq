@@ -7,7 +7,7 @@ export class NavBar{
         
         this.elemento.innerHTML  = `
             <a href='#home' id='home-link'> DrinqShop </a>
-            <a href='#pedidos' id='pedidos-link'> | Pedidos </a>
+            <a href='#pedidos' id='pedidos-link'> Pedidos </a>
         `
     }
 }

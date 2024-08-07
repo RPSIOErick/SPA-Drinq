@@ -1,5 +1,10 @@
 #main-d-pedidos {
     background-color: #f8f8f8;
+    /* background-image: url('https://i.pinimg.com/originals/21/43/43/2143431d3865f96054bc805a9720ef93.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
     margin: 0;
     padding: 2vw;
     height: 100vh;
@@ -43,7 +48,9 @@
 
 #brew
 {
-    background: linear-gradient(#8B695F, #D7A281);
+    background: linear-gradient(30deg, #8B695F, #D7A281);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 #brew button
@@ -53,7 +60,9 @@
 
 #milkshake
 {
-    background: linear-gradient(#E9B6BD, #D61819);
+    background: linear-gradient(30deg,  #D61819, #E9B6BD);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 #milkshake button
@@ -63,7 +72,9 @@
 
 #boba
 {
-    background: linear-gradient(#9DBA0E, #DEBA8A);
+    background: linear-gradient(30deg, #9DBA0E, #DEBA8A);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 #boba button
@@ -73,12 +84,26 @@
 
 #smoothie
 {
-    background: linear-gradient(#CF7097, #3C4054)
+    background: linear-gradient(30deg, #3C4054, #CF7097);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
 #smoothie button
 {
     background-color: #809D10;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .info_pedido h2 {
@@ -95,7 +120,7 @@
     background-color: #ECA533;
     color: white;
     border-radius: 1vw;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.5vw;
     padding-left: 1vw;
     padding-right: 1vw;

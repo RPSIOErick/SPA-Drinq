@@ -2,6 +2,7 @@ import { NavBar } from './navbar.js';
 import { Router } from './router.js';
 import { Home } from './home.js'; // Certifique-se de importar a classe Home
 import { Pedidos } from './pedidos.js';
+import { Editar } from './editar.js';
 
 class App {
     constructor() {
@@ -13,6 +14,7 @@ class App {
     iniciar() {
         this.carregarCSS('style.css'); // Adicionando CSS
         this.carregarCSS('pedidos.css')
+        this.carregarCSS('editar.css')
 
         this.nav.carregar();
         document.getElementById('home-link').addEventListener('click', () => {
@@ -36,6 +38,10 @@ class App {
         else if (window.location.hash === '#pedidos') {
             const pedidos = new Pedidos();
             document.getElementById('main-content').innerHTML = pedidos.carregar()
+        }
+        else if (window.location.href === '#editar') {
+            const editar = new Editar();
+            document.getElementById('main-content').innerHTML = editar.carregar()
         }
     }
 
