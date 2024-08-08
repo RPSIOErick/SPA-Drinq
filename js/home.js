@@ -33,9 +33,9 @@ export class Home {
 
                             <span style='display: flex;'>
 
-                                <input type='button' id='btn-count-minus' value='-'>
+                                <input type='button' id='btn-count-minus' value='<'>
                                 <input type="text" id="preco_bebida" name="preco_bebida" readonly>
-                                <input type='button' id='btn-count-plus' value='+'>
+                                <input type='button' id='btn-count-plus' value='>'>
 
                             </span>
 

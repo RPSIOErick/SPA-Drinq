@@ -27,5 +27,9 @@ export class Router {
             pagina.adicionarEventoMudancaCor()
             pagina.inicializarEventos()
         }
+
+        if (hash === '#pedidos') {
+            pagina.Teste()
+        }
     }
 }

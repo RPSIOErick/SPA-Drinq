@@ -3,7 +3,7 @@
     position: absolute;
     margin: 0;
 
-    background-image: linear-gradient(to right, #8B695F, #D7A281);
+    background-image: linear-gradient(to right, #8B695F, #8b5c3f);
     background-size: 400% 400%;
     width: 100vw;
     height: 100vh;
@@ -73,7 +73,7 @@
 
 
     -webkit-text-stroke-width: 0.1vw;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #EAE3E5;
 }
 
 #d-form-edit
@@ -104,7 +104,7 @@
 
 #d-form-preco, #d-form-unidade
 {
-    background-color: #ECA533;
+    background-color: #8b5c3f;
     width: fit-content;
     padding-top: 1vw;
     padding-bottom: 1vw;
@@ -131,7 +131,7 @@
     border-radius: 5vw;
     border: none;
     font-size: 1.5vw;
-    background-color: #ECA533;
+    background-color: #8b5c3f;
     color: white;
 }
 
@@ -159,7 +159,7 @@
 
 #d-form-edit input[type='submit']
 {
-    background-color: #ECA533;
+    background-color: #8b5c3f;
     color: white;
     font-weight: 600;
 

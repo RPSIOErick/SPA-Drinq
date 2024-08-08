@@ -1,6 +1,6 @@
 import { NavBar } from './navbar.js';
 import { Router } from './router.js';
-import { Home } from './home.js'; // Certifique-se de importar a classe Home
+import { Home } from './home.js';
 import { Pedidos } from './pedidos.js';
 import { Editar } from './editar.js';
 
@@ -15,6 +15,7 @@ class App {
         this.carregarCSS('style.css'); // Adicionando CSS
         this.carregarCSS('pedidos.css')
         this.carregarCSS('editar.css')
+        this.carregarCSS('home.css')
 
         this.nav.carregar();
         document.getElementById('home-link').addEventListener('click', () => {
