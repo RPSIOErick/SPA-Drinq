@@ -1,3 +1,4 @@
+/* Div principal dos pedidos */
 #main-d-pedidos {
     background-color: #f8f8f8;
     margin: 0;
@@ -9,198 +10,202 @@
     overflow-y: auto;
 }
 
-#main-d-pedidos h1 {
-    text-align: center;
+    /* Estilização do h1 da div principal de pedidos */
+    #main-d-pedidos h1 {
+        text-align: center;
 
-    margin-bottom: -2vw;
+        margin-bottom: -2vw;
 
-    padding-top: 7vw;
-}
-
-#pedidos {
-    
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;    
-    
-
-    transform: scale(0.9);
-
-    padding-bottom: 10vw;
-}
-
-/* Estilo para cada item */
-.info_pedido {
-    width: 27vw;
-    margin: 1vw;
-    height: fit-content;
-    text-align: center;
-    border-radius: 1.5vw;
-    padding: 0.5vw;
-    
-    box-shadow: inset 0 0 0.5vw rgba(0, 0, 0, 0.404);
-}
-
-#brew
-{
-    background: linear-gradient(30deg, #8B695F, #D7A281);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-#brew button
-{
-    background-color: #413537;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#brew button:hover
-{
-    background-color: #796a6d;
-}
-
-#milkshake
-{
-    background: linear-gradient(30deg,  #D61819, #E9B6BD);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-#milkshake button
-{
-    background-color: #F8A392;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#milkshake button:hover
-{
-    background-color: #d14a4a;
-}
-
-#boba
-{
-    background: linear-gradient(30deg, #9DBA0E, #DEBA8A);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-#boba button
-{
-    background: #8D4516;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#boba button:hover
-{
-    background-color: #6d3a13;
-}
-
-#smoothie
-{
-    background: linear-gradient(30deg, #3C4054, #CF7097);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-#smoothie button
-{
-    background-color: #809D10;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#smoothie button:hover
-{
-    background-color: #6b7f0d;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
+        padding-top: 7vw;
     }
-    50% {
-        background-position: 100% 50%;
+
+    /* Div para organização de pedidos */
+    #pedidos {
+        
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;    
+        
+
+        transform: scale(0.9);
+
+        padding-bottom: 10vw;
     }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
-.info_pedido h2 {
-    font-size: 1.5vw;
-    color: white;
-}
+        /* Estilo para cada pedido */
+        .info_pedido {
+            width: 27vw;
+            margin: 1vw;
+            height: fit-content;
+            text-align: center;
+            border-radius: 1.5vw;
+            padding: 0.5vw;
+            
+            box-shadow: inset 0 0 0.5vw rgba(0, 0, 0, 0.404);
+        }
 
-.PU-d-flex {
-    display: flex;
-    justify-content: center;
-}
+            /* Estilização para pedidos "Cold Brew" */
+            #brew
+            {
+                background: linear-gradient(30deg, #8B695F, #D7A281);
+                background-size: 400% 400%;
+                animation: gradientAnimation 10s ease infinite;
+            }
 
-.PU-d-flex div {
-    background-color: #ECA533;
-    color: white;
-    border-radius: 1vw;
-    font-weight: 600;
-    font-size: 1.5vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    margin: 1vw;
-}
+                #brew button
+                {
+                    background-color: #413537;
+                    transition: background-color 0.3s ease-in-out;
+                }
 
-.img_bebida img {
-    width: 15vw;
-    position: relative;
-    margin: -1vw;
-}
+                #brew button:hover
+                {
+                    background-color: #796a6d;
+                }
 
-.descricao {
-    color: white;
-    font-size: 1.2vw;
-}
+            /* Estilização para pedidos "Milkshake de Morango" */
+            #milkshake
+            {
+                background: linear-gradient(30deg,  #D61819, #E9B6BD);
+                background-size: 400% 400%;
+                animation: gradientAnimation 10s ease infinite;
+            }
 
-.btn_editar_pedido, .btn_excluir_pedido {
-    border: none;
-    color: white;
-    padding: 0.5vw;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    border-radius: 2vw;
-    font-size: 1.3vw;
-    margin-left: -0.5vw;
-    margin-right: -0.5vw;
-}
+                #milkshake button
+                {
+                    background-color: #F8A392;
+                    transition: background-color 0.3s ease-in-out;
+                }
 
-.btn_editar_pedido
-{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right: 0.4vw solid rgba(255, 255, 255, 0.39);
-}
+                #milkshake button:hover
+                {
+                    background-color: #d14a4a;
+                }
 
-.btn_excluir_pedido
-{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: 0.4vw solid rgba(255, 255, 255, 0.39);
-    
-    font-size: 1.7vw;
-    
-}
+            /* Estilização para pedidos "Chá de Bolhas" */
+            #boba
+            {
+                background: linear-gradient(30deg, #9DBA0E, #DEBA8A);
+                background-size: 400% 400%;
+                animation: gradientAnimation 10s ease infinite;
+            }
 
-.btn_excluir_pedido ion-icon
-{
-    position: relative;
-    top: 10%;
-    right: 15%;
-}
+                #boba button
+                {
+                    background: #8D4516;
+                    transition: background-color 0.3s ease-in-out;
+                }
 
+                #boba button:hover
+                {
+                    background-color: #6d3a13;
+                }
 
-#btn-options
-{
-    display: flex;
-    justify-content: center;
-    margin: 2vw;
-}
+            /* Estilização para pedidos "Smoothie de Mirtilo" */
+            #smoothie
+            {
+                background: linear-gradient(30deg, #3C4054, #CF7097);
+                background-size: 400% 400%;
+                animation: gradientAnimation 10s ease infinite;
+            }
 
+                #smoothie button
+                {
+                    background-color: #809D10;
+                    transition: background-color 0.3s ease-in-out;
+                }
+
+                #smoothie button:hover
+                {
+                    background-color: #6b7f0d;
+                }
+
+            /* Estilização para os h2 de cada pedido */
+            .info_pedido h2 {
+                font-size: 1.5vw;
+                color: white;
+            }
+
+            /* Estilização para a div q contem o preço e a unidade do pedido */
+            .PU-d-flex {
+                display: flex;
+                justify-content: center;
+            }
+
+            /* Estilização das divs internas de (Preço e Unidade) */
+            .PU-d-flex div {
+                background-color: #ECA533;
+                color: white;
+                border-radius: 1vw;
+                font-weight: 600;
+                font-size: 1.5vw;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                margin: 1vw;
+            }
+
+            /* Estilização das imagens de cada bebida */
+            .img_bebida img {
+                width: 15vw;
+                position: relative;
+                margin: -1vw;
+            }
+
+            /* Estilização para a descrição de cada bebida */
+            .descricao {
+                color: white;
+                font-size: 1.2vw;
+            }
+
+            /* Estilização para cada botão de editar e excluir pedido */
+            .btn_editar_pedido, .btn_excluir_pedido {
+                border: none;
+                color: white;
+                padding: 0.5vw;
+                padding-left: 2.5vw;
+                padding-right: 2.5vw;
+                border-radius: 2vw;
+                font-size: 1.3vw;
+                margin-left: -0.5vw;
+                margin-right: -0.5vw;
+            }
+
+            /* Estilização para os botões de editar pedido */
+            .btn_editar_pedido
+            {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-right: 0.4vw solid rgba(255, 255, 255, 0.39);
+            }
+
+            /* Estilização para os botões de excluir pedido */
+            .btn_excluir_pedido
+            {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-left: 0.4vw solid rgba(255, 255, 255, 0.39);
+                
+                font-size: 1.7vw;
+                
+            }
+
+            /* Estilização para a tag "ion-icons" que as classes ".btn_excluir_pedido" possuem */
+            .btn_excluir_pedido ion-icon
+            {
+                position: relative;
+                top: 10%;
+                right: 15%;
+            }
+
+            /* Estilização da div que contem os botões de opções */
+            #btn-options
+            {
+                display: flex;
+                justify-content: center;
+                margin: 2vw;
+            }
+
+/* Estilização do Pop-up de delete */
 #delete-popup
 {
     background-color: #f8f8f8;
@@ -221,61 +226,197 @@
     display: none;
 }
 
-#delete-popup h2
-{
-    color: black;
-    font-size: 2vw;
-    text-align: center;
+    /* Estilização para o h2 do popup de delete */
+    #delete-popup h2
+    {
+        color: black;
+        font-size: 2vw;
+        text-align: center;
 
-    position: relative;
-    padding: 2vw;
-    margin: 0;
+        position: relative;
+        padding: 2vw;
+        margin: 0;
+    }
+
+        /* Estilização para a tag "ion icons" q se encontra dentro do H2 do popup */
+        #delete-popup h2 ion-icon
+        {
+            font-size: 5vw;
+        }
+
+    /* Estilização da div que contem os botões para confirmação ou não de exclusão */
+    #btn-del-options
+    {
+        display: flex;
+        justify-content: center;
+
+        padding: 2vw;
+    }
+
+    /* Configuração dos botões dentro da div #btn-del-options */
+    #btn-del-options button
+    {
+        border: none;
+        font-size: 1.5vw;
+        color: white;
+        border-radius: 1vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        padding: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+        /* Estilização do botão para cancelar exlusão */
+        #cancel-del
+        {
+            background-color: #D61819;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            #cancel-del:hover
+            {
+                background-color: #ee4a4a;
+            }
+
+        /* Estilização do botão para confirmar exclusão */
+        #confirm-del
+        {
+            background-color: #9DBA0E;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            #confirm-del:hover
+            {
+                background-color: #758a0c;
+            }
+
+/* Responsividade para telas em orientação retrato */
+@media screen and (orientation: portrait)
+{
+    #main-d-pedidos
+    {
+        height: 100vh;
+        padding: 2vh;
+    }
+
+    #main-d-pedidos h1
+    {
+        font-size: 4vh;
+        margin-top: 5vh;
+        margin-bottom: -10vh;
+    }
+
+    .info_pedido
+    {
+        width: 80vh;
+        padding: 2vh;
+        margin: 3vh;
+
+        box-shadow: inset 0 0 1vh rgba(0, 0, 0, 0.404);
+
+        border-radius: 2vh;
+    }
+
+    .info_pedido h2
+    {
+        font-size: 4vh;
+        position: relative;
+        margin-top: 0;
+    }
+
+    .img_bebida
+    {
+        width: 100%;
+
+        margin-top: -3vh;
+        text-align: center;
+    }
+
+    .img_bebida img
+    {
+        height: 30vh;
+        width: auto;
+    }
+
+    .descricao
+    {
+        display: none;
+    }
+
+    .PU-d-flex div
+    {
+        font-size: 2.5vh;
+        border-radius: 4vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+
+    .btn_editar_pedido, .btn_excluir_pedido
+    {
+        font-size: 2.5vh;
+        border-radius: 4vh;
+        padding: 1vh;
+    }
+
+    .btn_editar_pedido
+    {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+
+    .btn_excluir_pedido
+    {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+
+    .btn_excluir_pedido ion-icon
+    {
+        font-size: 3.5vh;
+        font-weight: bold;
+    }
+
+    #delete-popup
+    {
+        height: fit-content;
+        width: 40vh;
+    }
+
+    #delete-popup h2
+    {
+        font-size: 3.5vh;
+    }
+
+    #delete-popup h2 ion-icon
+    {
+        font-size: 5vh;
+        padding: 1vh;
+    }
+
+    #btn-del-options button
+    {
+        font-size: 3vh;
+        border-radius: 2vh;
+        padding: 1.5vh;
+        padding-left: 4vh;
+        padding-right: 4vh;
+    }
 }
 
-#delete-popup h2 ion-icon
-{
-    font-size: 5vw;
-}
-
-#btn-del-options
-{
-    display: flex;
-    justify-content: center;
-
-    padding: 2vw;
-}
-
-#btn-del-options button
-{
-    border: none;
-    font-size: 1.5vw;
-    color: white;
-    border-radius: 1vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    padding: 1vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-
-#cancel-del
-{
-    background-color: #D61819;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#cancel-del:hover
-{
-    background-color: #ee4a4a;
-}
-
-#confirm-del
-{
-    background-color: #9DBA0E;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#confirm-del:hover
-{
-    background-color: #758a0c;
+/* Animação de Fundo */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

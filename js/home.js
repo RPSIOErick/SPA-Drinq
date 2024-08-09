@@ -1,4 +1,6 @@
 export class Home {
+
+    // Método construtor da página de home
     constructor() {
         // Preços unitários para cada bebida
         this.precoUnitario = {
@@ -29,7 +31,7 @@ export class Home {
                     </p>
                     <div id='bebida_info' style='display: none;'>
                         <p> 
-                            <label for="preco_bebida">Preço:</label>
+                            <label for="preco_bebida">Preço</label>
 
                             <span style='display: flex;'>
 
@@ -64,15 +66,15 @@ export class Home {
         `;
     }
 
-    // Método para adicionar o evento de mudança de fundo de acordo com bebida selecionada
-    adicionarEventoMudancaCor() {
+    // Método para adicionar os eventos dinâmicos da página Home
+    eventosHome() {
         document.getElementById('bebidas').addEventListener('change', (event) => {
-            const bebida = event.target.value;
-            const gradient = this.getGradient(bebida);
-            const imgSrc = this.getImageSrc(bebida);
-            const preco = this.getPreco(bebida);
-            const nomeBebida = this.getNomeBebida(bebida);
-
+            const bebida = event.target.value; // Obtém a bebida selecionada
+            const gradient = this.getGradient(bebida); // Obtém o gradiente de fundo de acordo com a bebida
+            const imgSrc = this.getImageSrc(bebida); // Obtém a imagem da bebida de acordo com a bebida selecionada
+            const preco = this.getPreco(bebida); // Obtém o preço formatado da bebida
+            const nomeBebida = this.getNomeBebida(bebida); // Obtém o nome da bebida
+ 
             document.body.style.backgroundImage = gradient; // Muda o gradiente do fundo
             document.getElementById('bebida-img').src = imgSrc; // Atualiza a imagem da bebida
             document.getElementById('preco').innerHTML = preco; // Atualiza o preço exibido
@@ -82,6 +84,7 @@ export class Home {
             document.getElementById('preco').style.opacity = 1; // Garante que o preço esteja visível
             this.quantidade = 1;  // Reseta a quantidade quando uma nova bebida é selecionada
 
+            // Exibe ou esconde o formulário de cadastro da bebida
             if(bebida !== 'null') {
                 document.getElementById('bebida_info').style.display = 'block'; // Exibe as informações da bebida
             } else {
@@ -123,6 +126,7 @@ export class Home {
         }
     }
 
+    // Obtém o nome da bebida baseado na bebida selecionada
     getNomeBebida(bebida) {
         switch(bebida) {
             case 'cold_brew': 

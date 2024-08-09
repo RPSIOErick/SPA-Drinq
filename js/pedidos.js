@@ -1,12 +1,15 @@
 export class Pedidos {
+
+    // Método construtor da página de pedidos
     constructor() {
 
     }
 
+    // Método para carregar a página de pedidos
     carregar() {
         return `
             <div id='main-d-pedidos'">
-                <h1>Página de Pedidos</h1>
+                <h1> Meus Pedidos </h1>
 
                 <div id='pedidos'>
                 
@@ -99,40 +102,46 @@ export class Pedidos {
 
     }
 
-    Teste(){
-        console.log('Teste');
+    // Método para adicionar a funcionalidade de deletar um pedido
+    DeleteFunc(){
+        console.log('JS Pedidos funcionando'); // Teste para verificar se o JS está funcionando
 
-        const botoesExcluir = document.querySelectorAll('button#excl_btn')
+        const botoesExcluir = document.querySelectorAll('button#excl_btn') // Seleciona todos os botões de excluir
 
+        // Adiciona a funcionalidade de deletar um pedido para cada botão
         botoesExcluir.forEach(botao => {
+
+            // Adiciona um evento de clique para cada botão
             botao.addEventListener('click', () => {                
 
-                const mainPedidos = document.getElementById('main-d-pedidos')
-                mainPedidos.style.filter = 'blur(0.5vw)'
-                mainPedidos.style.transition = '0.1s'
-                mainPedidos.style.overflowY = 'hidden'
-                mainPedidos.style.opacity = '0.8'
+                const mainPedidos = document.getElementById('main-d-pedidos') // Seleciona a div principal
+                mainPedidos.style.filter = 'blur(0.5vw)' // Adiciona um filtro de desfoque
+                mainPedidos.style.transition = '0.1s' // Adiciona uma transição
+                mainPedidos.style.overflowY = 'hidden' // Esconde o overflow (verticalmente)
+                mainPedidos.style.opacity = '0.8' // Diminui a opacidade
 
-                const popup = document.getElementById('delete-popup')
-                popup.style.display = 'block'
-                popup.style.filter = 'none'
+                const popup = document.getElementById('delete-popup') // Seleciona o popup
+                popup.style.display = 'block' // Adiciona um display block (torna visível)
+                popup.style.filter = 'none' // Remove o filtro de desfoque
 
-                const cancelar = document.getElementById('cancel-del')
-                const confirmar = document.getElementById('confirm-del')
+                const cancelar = document.getElementById('cancel-del') // Seleciona o botão de cancelar
+                const confirmar = document.getElementById('confirm-del') // Seleciona o botão de confirmar
 
+                // Adiciona um evento de clique para o botão de cancelar
                 cancelar.addEventListener('click', () => {
-                    popup.style.display = 'none'
-                    mainPedidos.style.filter = 'none'
-                    mainPedidos.style.overflowY = 'auto'
-                    mainPedidos.style.opacity = '1'
+                    popup.style.display = 'none' // Remove o display block (torna invisível)
+                    mainPedidos.style.filter = 'none' // Remove o filtro de desfoque
+                    mainPedidos.style.overflowY = 'auto' // Mostra o overflow (verticalmente)
+                    mainPedidos.style.opacity = '1' // Retorna a opacidade
                 })
 
+                // Adiciona um evento de clique para o botão de confirmar
                 confirmar.addEventListener('click', () => {
-                    botao.parentElement.parentElement.style.display = 'none'
-                    popup.style.display = 'none'
-                    mainPedidos.style.filter = 'none'
-                    mainPedidos.style.overflowY = 'auto'
-                    mainPedidos.style.opacity = '1'
+                    botao.parentElement.parentElement.style.display = 'none' // Remove a div do pedido
+                    popup.style.display = 'none' // Remove o display block (torna invisível)
+                    mainPedidos.style.filter = 'none' // Remove o filtro de desfoque
+                    mainPedidos.style.overflowY = 'auto' // Mostra o overflow (verticalmente)
+                    mainPedidos.style.opacity = '1' // Retorna a opacidade
                 })
 
             })

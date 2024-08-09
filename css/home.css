@@ -1,3 +1,20 @@
+/* Triângulo decorativo */
+#triangle-deco
+{
+    width: 20vw;
+    height: 120vw;
+    background-color: #f8f8f8;
+
+    position: absolute;
+    left: 55%;
+    
+    transform: rotate(10deg);
+
+    box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.404);
+    
+}
+
+/* Estilização para a div principal do formulário de cadastro */
 #d-form-cad
 {
     background-color: #f8f8f8;
@@ -13,123 +30,332 @@
     padding-top: 12.5vw;
 }
 
-#titulo-form-cad
-{
-    font-size: 2vw;
-}
+    /* Título para o formulário de cadastro */
+    #titulo-form-cad
+    {
+        font-size: 2vw;
+    }
 
-#titulo-form-cad, #form-cad
-{
-    position: relative;
-    right: 10%;
+    /* Estilizações para o título e para o formulário de cadastro */
+    #titulo-form-cad, #form-cad
+    {
+        position: relative;
+        right: 10%;
 
-    margin: 0 auto;
+        margin: 0 auto;
+        
+    }
+
+        /* Botões de adicionar e remover */
+        #btn-count-minus, #btn-count-plus
+        {
+            margin-left: 1vw;
+            margin-right: 1vw;
+            border-radius: 50%;
+            width: 4vw;
+            border: none;
+            font-size: 1.5vw;
+            background-color: #8A5F4A;
+            color: white;
+        }
+
+        /* Estilização para os inputs e textareas */
+        input, textarea
+        {
+            width: 80%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #333;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        /* Estilização para o textarea */
+        textarea
+        {
+            max-width: 80%;
+            min-width: 80%;
+            font-family: "Nunito Sans", sans-serif;
+        }
+
+        /* Estilizações para o Select */
+        select {
+            width: 90%;
+            padding: 0.75rem;
+            font-size: 1.3vw;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #333;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        select:hover {
+            border-color: #8b5e3c;
+        }
+
+        select:focus {
+            border-color: #8b5e3c;
+        }
+
+        select option {
+            background-color: #fff;
+            color: #333;
+        }
+
+        select option:hover {
+            background-color: #8b5e3c;
+            color: #fff;
+        }
+
+    /* Estilização para a div da imagem da bebida */
+    #imagem-bebida
+    {
+        position: absolute;
+        padding: 4vw;
+        z-index: -1;
+
+        top: 20%;
+        width: 50%;
+
+        text-align: center;
+
+    }
+
+        /* Estilização para a imagem da bebida */
+        #bebida-img
+        {
+            position: relative;
+            height: 35vw;
+            z-index: 5;
+
+            animation: float 3s ease-in-out infinite;
+        }
+
+    /* Estilização para a div de preço da bebida */
+    #preco
+    {
+        background-color: #ECA533;
+        width: fit-content;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        border-radius: 5vw;
+        color: white;
+        font-weight: bold;
+
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+        z-index: 2;
+
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+    }
+
+    /* Estilização para o nome da bebida */
+    #nome-bebida
+    {
+        font-size: 3.5vw;
+        position: relative;
+        color: transparent;
+        font-weight: bold;
+
+        margin-top: -2vw;
+
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+
+        -webkit-text-stroke-width: 0.1vw;
+        -webkit-text-stroke-color: white;
+    }
+
+    /* Centralização do preço da bebida e o nome dentro do select de bebidas */
+    #preco_bebida, #bebidas{
+        text-align: center;
+    }
+
+    /* Estilização para o botão de cadastro */
+    #btn-cad
+    {
+        width: 60%;
+        padding: 1vw;
+        margin: 1vw 0;
+        border-radius: 1vw;
+        border: none;
+        font-size: 1.5vw;
+        background-color: #8A5F4A;
+        color: white;
+    }
+
+/* Responsividade para telas em orientação retrato */
+@media screen and (orientation: portrait)
+{
+
+    #d-form-cad
+    {
+        position: absolute;
+        
+        text-align: center;
+
+        margin-top: 80vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 92%;
+
+        overflow-y: auto;
+        
+    }
+
+    #triangle-deco
+    {
+        display: none;
+    }
+
+    #titulo-form-cad, #form-cad
+    {
+        position: relative;
+        right: 0;
+        font-size: 2vh;
+    }
+
+    #titulo-form-cad
+    {
+        font-size: 3vh;
+    }
+
+    #form-cad
+    {
+        font-size: 2.5vh;
+
+        padding-bottom: 10vh;
+    }
+
+    #form-cad input[type="text"], #form-cad input[type="number"], #form-cad textarea
+    {
+        width: 90%;
+        padding: 1vh;
+        font-size: 2vh;
+    }
+
+    #form-cad select
+    {
+        width: 90%;
+        padding: 1vh;
+        font-size: 2vh;
+    }
+
+    #form-cad textarea
+    {
+        height: 10vh;
+        font-size: 2vh;
+    }
+
+    #btn-count-minus, #btn-count-plus
+    {
+        width: 12.5vh;
+        height: fit-content;
+        padding: 1vh;
+        font-size: 3.5vh;
+        
+        position: relative;
+    }
+
+    #btn-count-minus
+    {
+        left: 15%;
+    }
+
+    #btn-count-plus
+    {
+        right: 15%;
+    }
+
+    #preco_bebida
+    {
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+
+    #btn-cad
+    {
+        width: 80%;
+        padding: 2vh;
+        margin: 2vh 0;
+        border-radius: 2vh;
+        font-size: 3vh;
+    }
+
+    #bebidas
+    {
+        position: relative;
+        width: 80%;
+        font-size: 2vh;
+    }
     
+    #imagem-bebida
+    {
+        position: relative;
+        height: fit-content;
+        width: 92%;
+
+        padding-top: 15vh;
+    }
+
+    #bebida-img
+    {
+        height: 30vh;
+    }
+
+    #preco
+    {
+        font-size: 2.5vh;
+        padding: 1vh;
+
+        width: fit-content;
+        padding-left: 4vh;
+        padding-right: 4vh;
+
+        position: absolute;
+
+        margin-top: 19vh;
+        margin-left: -9.2vh;
+
+        z-index: 15;
+        
+    }
+
+    #nome-bebida
+    {
+        font-size: 12vw;
+        
+        font-weight: 800;
+
+        position: absolute;
+        bottom: 65%;
+
+        left: 0;
+
+        margin: 0 auto;
+
+        max-height: 10vh;
+    }
 }
 
-#triangle-deco
-{
-    width: 20vw;
-    height: 90vw;
-    background-color: #f8f8f8;
 
-    position: absolute;
-    left: 55%;
-    
-    transform: rotate(15deg);
-
-    box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.404);
-    
-}
-
-#btn-count-minus, #btn-count-plus
-{
-    margin-left: 1vw;
-    margin-right: 1vw;
-    border-radius: 50%;
-    width: 4vw;
-    border: none;
-    font-size: 1.5vw;
-    background-color: #8A5F4A;
-    color: white;
-}
-
-input, textarea
-{
-    width: 80%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    color: #333;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-textarea
-{
-    max-width: 80%;
-    min-width: 80%;
-    font-family: "Nunito Sans", sans-serif;
-}
-
-select {
-    width: 90%;
-    padding: 0.75rem;
-    font-size: 1.3vw;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    color: #333;
-    outline: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-select:hover {
-    border-color: #8b5e3c;
-}
-
-select:focus {
-    border-color: #8b5e3c;
-}
-
-select option {
-    background-color: #fff;
-    color: #333;
-}
-
-select option:hover {
-    background-color: #8b5e3c;
-    color: #fff;
-}
-
-#imagem-bebida
-{
-    position: absolute;
-    padding: 4vw;
-    z-index: -1;
-
-    top: 15%;
-    width: 50%;
-
-    text-align: center;
-
-}
-
-#bebida-img
-{
-    position: relative;
-    height: 35vw;
-    z-index: 5;
-
-    animation: float 3s ease-in-out infinite;
-}
-
+/* Animação para a imagem da bebida */
 @keyframes float {
     0% {
       transform: translateY(0);
@@ -141,59 +367,3 @@ select option:hover {
       transform: translateY(0);
     }
   }
-
-#preco
-{
-    background-color: #ECA533;
-    width: fit-content;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    border-radius: 5vw;
-    color: white;
-    font-weight: bold;
-    
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-    z-index: 2;
-
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-
-}
-
-#nome-bebida
-{
-    font-size: 3.5vw;
-    position: relative;
-    color: transparent;
-    font-weight: bold;
-
-    margin-top: -2vw;
-
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-
-    -webkit-text-stroke-width: 0.1vw;
-    -webkit-text-stroke-color: white;
-}
-
-#preco_bebida, #bebidas{
-    text-align: center;
-}
-
-#btn-cad
-{
-    width: 60%;
-    padding: 1vw;
-    margin: 1vw 0;
-    border-radius: 1vw;
-    border: none;
-    font-size: 1.5vw;
-    background-color: #8A5F4A;
-    color: white;
-}

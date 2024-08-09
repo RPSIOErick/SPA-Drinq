@@ -1,6 +1,7 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+/* Estilizações do Corpo */
 body
 {
     margin: 0;
@@ -11,6 +12,60 @@ body
     overflow-y: hidden;
 }
 
+    /* Estilizações da Navbar */
+    nav
+    {
+        background-color: #f8f8f8;
+        padding: 1.5vw;
+        position: relative;
+        z-index: 8;
+        text-align: center;
+        box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.404);
+        display: flex;
+        justify-content: space-between;
+
+        position: fixed;
+        width: 100vw;
+    }
+
+        /* Estilizações dos links na Navbar */
+        nav a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5vw;
+        }
+
+            /* Link para a Home na Navbar */
+            #home-link
+            {
+                font-weight: bold;
+                font-size: 2vw;
+            }
+
+            /* Link para os Pedidos na Navbar */
+            #pedidos-link
+            {
+                position: absolute;
+                top: 50%;
+                left: 90%;
+                transform: translateY(-50%);
+            }
+
+/* Responsividade para telas em orientação retrato */
+@media screen and (orientation: portrait)
+{ 
+    #home-link, #pedidos-link
+    {
+        font-size: 3vh;
+    }
+    #pedidos-link
+    {
+        left: 75%;        
+    }
+}
+
+/* Animação de Fundo */
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -21,40 +76,4 @@ body
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-nav
-{
-    background-color: #f8f8f8;
-    padding: 1.5vw;
-    position: relative;
-    z-index: 8;
-    text-align: center;
-    box-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.404);
-    display: flex;
-    justify-content: space-between;
-
-    position: fixed;
-    width: 100vw;
-}
-
-nav a
-{
-    text-decoration: none;
-    color: black;
-    font-size: 1.5vw;
-}
-
-#home-link
-{
-    font-weight: bold;
-    font-size: 2vw;
-}
-
-#pedidos-link
-{
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translateY(-50%);
 }
