@@ -159,6 +159,7 @@
 
                 border-radius: 4vw;
                 margin-top: 1vw;
+                margin-bottom: 2vw;
 
                 font-size: 1.5vw;
             }
@@ -232,6 +233,7 @@
                 font-size: 3vh;
                 border-radius: 4vh;
                 margin: 2vh;
+                margin-bottom: 4vh;
             }
 }
 
