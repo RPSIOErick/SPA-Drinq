@@ -55,7 +55,7 @@
             width: 4vw;
             border: none;
             font-size: 1.5vw;
-            background-color: #8A5F4A;
+            background-color: #ECA533;
             color: white;
         }
 
@@ -183,8 +183,27 @@
     }
 
     /* Centralização do preço da bebida e o nome dentro do select de bebidas */
-    #preco_bebida, #bebidas{
+    #preco_bebida, #bebidas
+    {
         text-align: center;
+    }
+
+    /* Estilização para o input do preço da bebida */
+    #preco_bebida
+    {
+        background-color: #ECA533;
+                width: fit-content;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                padding-left: 2.5vw;
+                padding-right: 2.5vw;
+                border-radius: 5vw;
+                color: white;
+                font-weight: bold;
+
+                text-align: center;
+
+                font-size: 1.2vw;
     }
 
     /* Estilização para o botão de cadastro */
@@ -196,7 +215,7 @@
         border-radius: 1vw;
         border: none;
         font-size: 1.5vw;
-        background-color: #8A5F4A;
+        background-color: #ECA533;
         color: white;
     }
 

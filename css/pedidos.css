@@ -224,6 +224,8 @@
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.404);
 
     display: none;
+
+    padding: 4vw;
 }
 
     /* Estilização para o h2 do popup de delete */
